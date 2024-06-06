@@ -3,42 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book a Test Drive</title>
+    <title>Book a Test Drive - Velocity Motors</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="vlp1.html">Car Model 1</a></li>
+                <li><a href="vlp2.html">Car Model 2</a></li>
+                <li><a href="vlp3.html">Car Model 3</a></li>
+                <li><a href="vlp4.html">Car Model 4</a></li>
+                <li><a href="test-drive.html">Book a Test Drive</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="finance.html">Finance Calculator</a></li>
+            </ul>
+        </nav>
         <h1>Book a Test Drive</h1>
     </header>
-    <section>
-        <form action="submit-test-drive.php" method="post">
+    <section class="test-drive-form">
+        <h2>Book a Test Drive</h2>
+        <form action="submit-test-drive.php" method="POST">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br>
+            <input type="text" id="name" name="name" required><br><br>
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required><br><br>
             <label for="car-model">Car Model:</label>
-            <select id="car-model" name="car-model">
-                <option value="car1">Car Model 1</option>
-                <option value="car2">Car Model 2</option>
-                <option value="car3">Car Model 3</option>
-                <option value="car4">Car Model 4</option>
-            </select><br>
+            <select id="car-model" name="car-model" required>
+                <option value="Model 1">Model 1</option>
+                <option value="Model 2">Model 2</option>
+                <option value="Model 3">Model 3</option>
+                <option value="Model 4">Model 4</option>
+            </select><br><br>
             <label for="date">Preferred Date:</label>
-            <input type="date" id="date" name="date" required><br>
-            <button type="submit">Submit</button>
+            <input type="date" id="date" name="date" required><br><br>
+            <input type="submit" value="Submit">
         </form>
     </section>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="vlp1.html">Car Model 1</a></li>
-            <li><a href="vlp2.html">Car Model 2</a></li>
-            <li><a href="vlp3.html">Car Model 3</a></li>
-            <li><a href="vlp4.html">Car Model 4</a></li>
-            <li><a href="test-drive.html">Book a Test Drive</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="finance.html">Finance Calculator</a></li>
-        </ul>
-    </nav>
+    <footer>
+        <p>&copy; 2024 Velocity Motors. All rights reserved.</p>
+    </footer>
 </body>
 </html>
