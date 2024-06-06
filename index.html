@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automobile Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Automobile Website</h1>
+    </header>
+    <section class="carousel">
+        <div><img src="car1.jpg" alt="Car 1"></div>
+        <div><img src="car2.jpg" alt="Car 2"></div>
+        <div><img src="car3.jpg" alt="Car 3"></div>
+    </section>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="vlp1.html">Car Model 1</a></li>
+            <li><a href="vlp2.html">Car Model 2</a></li>
+            <li><a href="vlp3.html">Car Model 3</a></li>
+            <li><a href="vlp4.html">Car Model 4</a></li>
+            <li><a href="test-drive.html">Book a Test Drive</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="finance.html">Finance Calculator</a></li>
+        </ul>
+    </nav>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.carousel').slick({
+                autoplay: true,
+                dots: true,
+            });
+        });
+    </script>
+</body>
+</html>
