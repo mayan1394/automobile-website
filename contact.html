@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Velocity Motors</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://assets.adobedtm.com/35066b6d6803/84e48311afdd/launch-02cb9393600d-development.min.js" async></script>
 </head>
 <body>
     <header>
@@ -23,20 +22,28 @@
         </nav>
         <h1>Contact Us</h1>
     </header>
-    <section class="contact-form">
-        <h2>Get in Touch</h2>
-        <form action="submit-contact.php" method="POST">
+    <section>
+        <form id="contactForm">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br><br>
+            <input type="text" id="name" name="name" required>
+
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
-            <input type="submit" value="Submit">
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Submit</button>
         </form>
     </section>
     <footer>
-        <p>&copy; Velocity Motors. All rights reserved.</p>
+        <p>&copy; 2024 Fictional Automobile Company. All rights reserved.</p>
     </footer>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            window.location.href = 'thank-you.html';
+        });
+    </script>
 </body>
 </html>
